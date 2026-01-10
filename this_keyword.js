@@ -1,17 +1,17 @@
 
 
-// global.name="saumya"
+global.name="saumya"
 
-module.exports.name="dhiraj"
+// module.exports.name="dhiraj"
 
-console.log(this) // normal this outside everything
+console.log(this) // normal this outside everything (module's this)
 
 
 function test(){
     console.log(this);
     
 }
-// test()
+test()
 
 let testArrow=()=>{
     console.log(this);
