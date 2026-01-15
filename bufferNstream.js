@@ -10,8 +10,8 @@ const fs=require("fs")
 const readstream=fs.createReadStream("bigfile.txt")
 
 readstream.on("data",(chunk)=>{
-    console.log(chunk,"bjb");
-    console.log("Read")
+    console.log(chunk.toString(),"bjb");
+    // console.log("Read")
 })
 
 
